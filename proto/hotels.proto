@@ -1,0 +1,114 @@
+syntax = "proto3";
+
+package marlow.hotels.v1;
+
+// HotelService is the booking system of record. The GraphQL gateway is the only caller.
+service HotelService {
+  rpc SearchHotels (SearchHotelsRequest) returns (SearchHotelsResponse);
+  rpc GetHotel (GetHotelRequest) returns (Hotel);
+  rpc CreateBooking (CreateBookingRequest) returns (Booking);
+  rpc ListBookings (ListBookingsRequest) returns (ListBookingsResponse);
+  rpc CancelBooking (CancelBookingRequest) returns (Booking);
+  rpc UpsertUser (UpsertUserRequest) returns (User);
+  rpc GetUser (GetUserRequest) returns (User);
+}
+
+message SearchHotelsRequest {
+  string query = 1;
+  int32 max_price = 2;
+  int32 guests = 3;
+  string check_in = 4;
+  string check_out = 5;
+}
+
+message SearchHotelsResponse {
+  repeated Hotel hotels = 1;
+  int32 total = 2;
+}
+
+message GetHotelRequest {
+  string id = 1;
+}
+
+message Room {
+  string id = 1;
+  string hotel_id = 2;
+  string name = 3;
+  string beds = 4;
+  int32 max_guests = 5;
+  int32 price_per_night = 6;
+}
+
+message Hotel {
+  string id = 1;
+  string slug = 2;
+  string name = 3;
+  string city = 4;
+  string country = 5;
+  string neighborhood = 6;
+  string description = 7;
+  repeated string amenities = 8;
+  int32 price_per_night = 9;
+  string currency = 10;
+  double rating = 11;
+  int32 review_count = 12;
+  string image_url = 13;
+  repeated Room rooms = 14;
+}
+
+message User {
+  string id = 1;
+  string github_id = 2;
+  string email = 3;
+  string name = 4;
+  string avatar_url = 5;
+}
+
+message UpsertUserRequest {
+  string github_id = 1;
+  string email = 2;
+  string name = 3;
+  string avatar_url = 4;
+}
+
+message GetUserRequest {
+  string id = 1;
+}
+
+message CreateBookingRequest {
+  string user_id = 1;
+  string hotel_id = 2;
+  string room_id = 3;
+  string check_in = 4;
+  string check_out = 5;
+  int32 guests = 6;
+}
+
+message Booking {
+  string id = 1;
+  string user_id = 2;
+  string hotel_id = 3;
+  string room_id = 4;
+  string check_in = 5;
+  string check_out = 6;
+  int32 guests = 7;
+  int32 total_price = 8;
+  string currency = 9;
+  string status = 10;
+  string created_at = 11;
+  Hotel hotel = 12;
+  Room room = 13;
+}
+
+message ListBookingsRequest {
+  string user_id = 1;
+}
+
+message ListBookingsResponse {
+  repeated Booking bookings = 1;
+}
+
+message CancelBookingRequest {
+  string user_id = 1;
+  string booking_id = 2;
+}

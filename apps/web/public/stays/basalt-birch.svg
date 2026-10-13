@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560">
+  <title>A black timber house by the harbor</title>
+  
+    <rect width="800" height="560" fill="#d5e4ea"/>
+    <path d="M0 300 C120 240 180 280 300 220 C420 160 480 200 620 140 C700 110 760 150 800 130 V420 H0 Z" fill="#f4f7f8"/>
+    <path d="M80 420 L220 230 L360 420 Z" fill="#e7eef0"/>
+    <rect y="390" width="800" height="170" fill="#2c3338"/>
+    <path d="M0 450 C200 430 280 470 500 440 C640 424 720 460 800 448 V560 H0 Z" fill="#243036"/>
+    <rect x="470" y="250" width="230" height="150" fill="#1b1f22"/>
+    <polygon points="448,250 585,150 722,250" fill="#7ea18a"/>
+    <g fill="#f7f7f5">
+      <rect x="500" y="290" width="42" height="54"/>
+      <rect x="560" y="290" width="42" height="54"/>
+      <rect x="620" y="290" width="42" height="54"/>
+    </g>
+    <rect x="548" y="344" width="26" height="56" fill="#c9a27a"/>
+    <rect x="90" y="430" width="220" height="10" fill="#7ea18a"/>
+  
+</svg>

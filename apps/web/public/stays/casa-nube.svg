@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560">
+  <title>A pink stair in Roma Norte</title>
+  
+    <rect width="800" height="560" fill="#f6c9dc"/>
+    <circle cx="140" cy="90" r="36" fill="#fff1f6"/>
+    <rect x="150" y="70" width="460" height="420" fill="#e56b8c"/>
+    <rect x="190" y="120" width="110" height="130" fill="#f8e7c4"/>
+    <rect x="330" y="160" width="160" height="100" fill="#f8e7c4"/>
+    <rect x="520" y="130" width="50" height="80" fill="#f8e7c4"/>
+    <g fill="#1c1915" opacity="0.35">
+      <rect x="210" y="145" width="28" height="40"/>
+      <rect x="255" y="145" width="28" height="40"/>
+      <rect x="360" y="185" width="36" height="28"/>
+      <rect x="420" y="185" width="36" height="28"/>
+    </g>
+    <g fill="#2f6b4f">
+      <rect x="230" y="330" width="300" height="16"/>
+      <rect x="260" y="346" width="240" height="16"/>
+      <rect x="290" y="362" width="180" height="16"/>
+      <rect x="320" y="378" width="120" height="16"/>
+    </g>
+    <circle cx="640" cy="250" r="48" fill="#6d4b8a"/>
+    <circle cx="690" cy="300" r="30" fill="#7d5b96"/>
+    <rect y="470" width="800" height="90" fill="#c45574"/>
+  
+</svg>

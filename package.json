@@ -1,0 +1,21 @@
+{
+  "name": "marlow",
+  "private": true,
+  "author": "Arpan Bom <applycoding@gmail.com>",
+  "description": "Marlow, a small hotel search and booking demo.",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n hotels,gateway,web -c cyan,magenta,green \"npm run dev -w @marlow/hotels\" \"npm run dev -w @marlow/gateway\" \"npm run dev -w @marlow/web\"",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560">
+  <title>White rooms above the caldera</title>
+  
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#7ec8e3"/>
+        <stop offset="1" stop-color="#d7f0f6"/>
+      </linearGradient>
+    </defs>
+    <rect width="800" height="560" fill="url(#sky)"/>
+    <circle cx="650" cy="90" r="36" fill="#fff8ea"/>
+    <polygon points="0,430 180,300 800,470 800,560 0,560" fill="#d7b48a"/>
+    <polygon points="0,470 220,360 800,500 800,560 0,560" fill="#c6a278"/>
+    <rect x="160" y="250" width="150" height="130" fill="#f7f4ef"/>
+    <rect x="290" y="200" width="180" height="180" fill="#f7f4ef"/>
+    <rect x="440" y="270" width="130" height="110" fill="#f7f4ef"/>
+    <circle cx="380" cy="176" r="52" fill="#2c6cb0"/>
+    <rect x="366" y="128" width="28" height="34" fill="#f7f4ef"/>
+    <g fill="#2c6cb0">
+      <rect x="196" y="290" width="34" height="42"/>
+      <rect x="250" y="300" width="28" height="36"/>
+      <rect x="330" y="250" width="36" height="48"/>
+      <rect x="400" y="250" width="28" height="36"/>
+      <rect x="470" y="300" width="32" height="40"/>
+      <rect x="520" y="310" width="24" height="32"/>
+    </g>
+    <rect x="300" y="320" width="28" height="60" fill="#c9a27a"/>
+  
+</svg>

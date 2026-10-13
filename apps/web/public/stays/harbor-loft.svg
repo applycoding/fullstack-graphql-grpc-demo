@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560">
+  <title>A brick loft above the harbor</title>
+  
+    <rect width="800" height="560" fill="#d7e3ea"/>
+    <rect y="300" width="800" height="260" fill="#3d7ea6"/>
+    <path d="M0 360 C180 330 260 390 460 350 C620 320 700 370 800 350 V560 H0 Z" fill="#2f6b93"/>
+    <rect x="160" y="90" width="300" height="280" fill="#a3533c"/>
+    <polygon points="150,90 310,30 470,90" fill="#8d4633"/>
+    <g fill="#f4efe6">
+      <rect x="190" y="130" width="52" height="70"/>
+      <rect x="262" y="130" width="52" height="70"/>
+      <rect x="334" y="130" width="52" height="70"/>
+      <rect x="190" y="230" width="52" height="70"/>
+      <rect x="262" y="230" width="52" height="70"/>
+      <rect x="334" y="230" width="52" height="70"/>
+    </g>
+    <g fill="#1c1915" opacity="0.25">
+      <rect x="206" y="146" width="20" height="36"/>
+      <rect x="278" y="146" width="20" height="36"/>
+      <rect x="350" y="146" width="20" height="36"/>
+    </g>
+    <g fill="#1c1915">
+      <circle cx="560" cy="400" r="28"/>
+      <circle cx="640" cy="400" r="28"/>
+      <rect x="548" y="360" width="24" height="42" fill="#f4efe6"/>
+      <rect x="628" y="360" width="24" height="42" fill="#f4efe6"/>
+      <rect x="500" y="348" width="180" height="12"/>
+    </g>
+  
+</svg>
